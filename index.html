@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>大安根面角 · 非遗传承技艺</title>
+<meta property="og:title" content="大安根面角·非遗传承技艺">
+<meta property="og:description" content="宁强根面角制作技艺 · 县级非物质文化遗产 · 源于自然 传递新鲜">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/00_大安根面角门店.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+  background:#f5f2ed; color:#2c2c2c; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+/* ===== HERO ===== */
+.hero {
+  position:relative; height:100vh; min-height:580px; overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg,#1a0f0a 0%,#3d1f13 40%,#6b3520 70%,#8a4528 100%);
+}
+.hero::after {
+  content:''; position:absolute; inset:0;
+  background: radial-gradient(ellipse at 20% 80%,rgba(180,80,30,0.15) 0%,transparent 60%),
+              radial-gradient(ellipse at 80% 20%,rgba(200,150,80,0.1) 0%,transparent 50%);
+}
+.hero-inner { position:relative; z-index:2; text-align:center; color:#fff; padding:20px; }
+.hero-tag {
+  display:inline-block; border:1px solid rgba(255,200,140,0.4); color:#ffc88c;
+  padding:6px 24px; font-size:13px; letter-spacing:4px; margin-bottom:28px;
+}
+.hero-title {
+  font-family:'Noto Serif SC',serif; font-weight:900;
+  font-size:clamp(48px,8vw,90px); color:#fff;
+  text-shadow:0 4px 30px rgba(0,0,0,0.3); line-height:1.1; margin-bottom:12px;
+}
+.hero-sub {
+  font-family:'Noto Serif SC',serif; font-size:clamp(15px,2vw,22px);
+  color:rgba(255,200,140,0.85); font-weight:300; letter-spacing:6px; margin-bottom:36px;
+}
+.hero-sub::before,.hero-sub::after { content:'——'; margin:0 10px; opacity:0.4; }
+.hero-info {
+  font-size:14px; color:rgba(255,255,255,0.7); letter-spacing:1px;
+  display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap;
+}
+.hero-info a { color:rgba(255,255,255,0.7); text-decoration:none; }
+.hero-info a:hover { color:#ffc88c; }
+/* ===== SECTION COMMON ===== */
+.section { padding:60px 20px; }
+.section-inner { max-width:1100px; margin:0 auto; }
+.section-label {
+  font-size:12px; letter-spacing:4px; color:#b8860b; text-align:center; margin-bottom:8px;
+}
+.section-title {
+  font-family:'Noto Serif SC',serif; font-size:clamp(24px,3.5vw,36px); font-weight:700;
+  text-align:center; margin-bottom:40px; color:#2a150e;
+}
+/* ===== STORY ===== */
+.story { background:#f5f2ed; }
+.story-text {
+  max-width:780px; margin:0 auto 32px; font-size:15px; line-height:2; color:#444; text-align:justify;
+}
+.story-text p { margin-bottom:14px; }
+.story-text strong { color:#8a4528; }
+.store-img {
+  width:100%; max-width:800px; margin:0 auto; border-radius:12px; overflow:hidden;
+  box-shadow:0 8px 30px rgba(0,0,0,0.1);
+}
+.store-img img { width:100%; display:block; }
+/* ===== PROCESS ===== */
+.process { background:#fff; }
+.process-list { display:flex; flex-direction:column; gap:28px; max-width:600px; margin:0 auto; }
+.process-item { display:flex; flex-direction:column; gap:8px; }
+.process-item-img {
+  width:100%; border-radius:10px; overflow:hidden; min-height:220px; background:#eee;
+}
+.process-item-img img { width:100%; display:block; }
+.process-item-info {
+  background:#fff; padding:16px 20px; border-radius:8px;
+  margin-top:-16px; position:relative; z-index:2;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+.process-item-name { font-size:17px; font-weight:700; color:#8a4528; margin-bottom:6px; }
+.process-item-desc { font-size:14px; color:#777; line-height:1.7; }
+/* ===== BANNER ===== */
+.banner {
+  background:linear-gradient(135deg,#2a150e,#4a2517); padding:50px 30px;
+}
+.banner-inner {
+  max-width:900px; margin:0 auto; display:flex; align-items:center; gap:40px; flex-wrap:wrap;
+}
+.banner-text { flex:1; min-width:200px; color:#fff; }
+.banner-text h3 {
+  font-family:'Noto Serif SC',serif; font-size:clamp(22px,3vw,32px); margin-bottom:10px;
+}
+.banner-text p { color:rgba(255,255,255,0.6); font-size:14px; }
+.banner-img {
+  flex:1; min-width:200px; border-radius:10px; overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+.banner-img img { width:100%; display:block; }
+/* ===== DISHES ===== */
+.dishes { background:#faf8f5; }
+.dishes-header { text-align:center; margin-bottom:36px; }
+.dishes-en {
+  font-size:11px; color:#bbb; letter-spacing:5px; text-transform:uppercase;
+  margin-bottom:10px; font-family:'Noto Sans SC',sans-serif;
+}
+.dishes-title {
+  font-family:'Noto Serif SC',serif; font-size:clamp(24px,3.5vw,34px);
+  font-weight:700; color:#3d1f13; margin-bottom:10px;
+}
+.dishes-sub {
+  font-size:14px; color:#999; font-weight:300; letter-spacing:1px;
+}
+.dishes-grid {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:16px;
+  max-width:700px; margin:0 auto;
+}
+.dish-item {
+  position:relative; border-radius:10px; overflow:hidden; aspect-ratio:1/1;
+  background:#e8e0d6; box-shadow:0 3px 12px rgba(0,0,0,0.06);
+}
+.dish-item img { width:100%; height:100%; object-fit:cover; display:block; }
+.dish-name {
+  position:absolute; bottom:0; left:0; right:0;
+  background:linear-gradient(transparent,rgba(0,0,0,0.7)); padding:10px 8px 8px;
+  color:#fff; font-size:13px; text-align:center; font-weight:500;
+}
+.dish-name.small { font-size:12px; letter-spacing:0; white-space:nowrap; }
+/* ===== TEAM ===== */
+.team { background:#f8f4ef; padding-top:20px; }
+.team-inner { max-width:800px; margin:0 auto; text-align:center; }
+.team-text { font-size:15px; line-height:2; color:#555; max-width:650px; margin:0 auto; }
+/* ===== FOOTER ===== */
+.footer {
+  background:linear-gradient(135deg,#1a0f0a,#3d1f13); color:rgba(255,255,255,0.7);
+  text-align:center; padding:40px 20px; font-size:15px;
+}
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(30px); }
+  to { opacity:1; transform:translateY(0); }
+}
+@keyframes pulse {
+  0%,100% { opacity:0.6; }
+  50% { opacity:1; }
+}
+@keyframes shimmer {
+  0% { background-position:-200% 0; }
+  100% { background-position:200% 0; }
+}
+@keyframes floatY {
+  0%,100% { transform:translateY(0); }
+  50% { transform:translateY(-6px); }
+}
+@keyframes scaleIn {
+  from { opacity:0; transform:scale(0.92); }
+  to { opacity:1; transform:scale(1); }
+}
+.hero-title { animation:fadeUp 1s ease-out both; }
+.hero-tag { animation:fadeUp 0.8s 0.2s ease-out both; }
+.hero-sub { animation:fadeUp 0.8s 0.4s ease-out both; }
+.hero-info { animation:fadeUp 0.8s 0.6s ease-out both; }
+.process-item { animation:fadeUp 0.6s ease-out both; }
+.process-item:nth-child(1) { animation-delay:0.05s; }
+.process-item:nth-child(2) { animation-delay:0.1s; }
+.process-item:nth-child(3) { animation-delay:0.15s; }
+.process-item:nth-child(4) { animation-delay:0.2s; }
+.process-item:nth-child(5) { animation-delay:0.25s; }
+.process-item:nth-child(6) { animation-delay:0.3s; }
+.dish-item { animation:scaleIn 0.4s ease-out both; transition:transform 0.3s ease,box-shadow 0.3s ease; }
+.dish-item:hover { transform:translateY(-4px); box-shadow:0 8px 24px rgba(0,0,0,0.12); }
+.dish-item:nth-child(n) { animation-delay:calc(0.03s * var(--i, 1)); }
+.hero-sub::before,.hero-sub::after { animation:pulse 2s ease-in-out infinite; }
+.banner-text h3 { animation:fadeUp 0.6s ease-out both; }
+.banner-text p { animation:fadeUp 0.6s 0.15s ease-out both; }
+.store-img img { transition:transform 0.5s ease; }
+.store-img img:hover { transform:scale(1.02); }
+.footer-brand { animation:pulse 3s ease-in-out infinite; }
+.section-title::after {
+  background: linear-gradient(90deg, transparent, #b8860b, #ffc88c, #b8860b, transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; }
+}
+.footer-brand {
+  font-family:'Noto Serif SC',serif; font-size:26px; font-weight:700;
+  color:#ffc88c; margin-bottom:20px;
+}
+.footer-info a { color:rgba(255,255,255,0.5); text-decoration:none; font-size:15px; }
+.footer-info a:hover { color:#ffc88c; }
+.footer-info p { margin-bottom:8px; }
+@media (max-width:480px) {
+  .dishes-grid { gap:10px; }
+  .dish-name { font-size:12px; padding:8px 6px 6px; }
+}
+</style>
+</head><body>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">古法传承 · 手工精制</div>
+    <h1 class="hero-title">大安根面角</h1>
+    <div class="hero-sub">宁强非物质文化遗产</div>
+    <div class="hero-info">
+      <a href="https://uri.amap.com/search?keyword=大安根面角(太白路店)&city=汉中">📍 汉中市汉台区太白路138号</a>
+      <a href="tel:13891609262">📞 13891609262</a>
+  </div>
+</section>
+
+<!-- ===== STORY ===== -->
+<section class="story section">
+  <div class="section-inner">
+    <div class="section-label">BRAND STORY</div>
+    <h2 class="section-title">传承四百年的秦岭风味</h2>
+    <div class="story-text">
+      <p>宁强，北依秦岭，南枕巴山。深山之中蕨类繁茂，其凤尾科蕨类根茎富含淀粉。</p>
+      <p>先民以蕨根为料，经「打根」取粉、揉制面皮、裹馅蒸制，化作一道独特美食——<strong>根面角</strong>。</p>
+      <p>2009年，宁强根面角制作技艺被列入<strong>县级非物质文化遗产</strong>名录。大安根面角坚守古法手工，从揉面到包馅，每一道工序都在指尖完成。</p>
+      <p>如今，根面角已通过网络平台销往全国，让更多人尝到这份<strong>源于自然 · 传递新鲜</strong>的山野味道。</p>
+    <div class="store-img">
+      <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/00_大安根面角门店.jpg" alt="大安根面角门店" loading="lazy">
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="process section">
+  <div class="section-inner">
+    <div class="section-label">HANDCRAFTED PROCESS</div>
+    <h2 class="section-title">古法手作 · 六道工序</h2>
+    <p style="text-align:center;font-size:14px;color:#888;margin:-28px 0 36px;">从一根蕨根到一枚根面角，每一步都是时间的味道</p>
+    <div class="process-list">
+
+      <div class="process-item" style="--i:6">
+        <div class="process-item-img">
+          <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/01_揉面.jpg" alt="揉面" loading="lazy">
+        </div>
+        <div class="process-item-info">
+          <div class="process-item-name">揉面</div>
+          <div class="process-item-desc">师傅手工反复揉搓长面团，力道均匀，直到面筋舒展、韧性十足</div>
+        </div>
+      </div>
+
+      <div class="process-item" style="--i:5">
+        <div class="process-item-img">
+          <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/02_备皮.jpg" alt="备皮" loading="lazy">
+        </div>
+        <div class="process-item-info">
+          <div class="process-item-name">备皮</div>
+          <div class="process-item-desc">将揉好的面团分成均匀小剂，擀成薄厚适中的圆形面皮</div>
+        </div>
+      </div>
+
+      <div class="process-item" style="--i:4">
+        <div class="process-item-img">
+          <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/03_填馅.jpg" alt="填馅" loading="lazy">
+        </div>
+        <div class="process-item-info">
+          <div class="process-item-name">填馅</div>
+          <div class="process-item-desc">取适量馅料放在面皮中央，包裹均匀</div>
+        </div>
+      </div>
+
+      <div class="process-item" style="--i:3">
+        <div class="process-item-img">
+          <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/04_包制.jpg" alt="包制" loading="lazy">
+        </div>
+        <div class="process-item-info">
+          <div class="process-item-name">包制</div>
+          <div class="process-item-desc">多人流水线配合，手法熟练，包制成型速度飞快</div>
+        </div>
+      </div>
+
+      <div class="process-item" style="--i:2">
+        <div class="process-item-img">
+          <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/05_成型.jpg" alt="成型" loading="lazy">
+        </div>
+        <div class="process-item-info">
+          <div class="process-item-name">成型</div>
+          <div class="process-item-desc">包好的面角形如牛角，排列整齐，造型精致美观</div>
+        </div>
+      </div>
+
+      <div class="process-item" style="--i:1">
+        <div class="process-item-img">
+          <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/06_蒸制.jpg" alt="蒸制" loading="lazy">
+        </div>
+        <div class="process-item-info">
+          <div class="process-item-name">蒸制</div>
+          <div class="process-item-desc">大火蒸制，锁住鲜味，出笼香气四溢，令人食欲大开</div>
+        </div>
+      </div>
+
+  </div>
+</section><!-- ===== 出笼 BANNER ===== -->
+<section class="banner" style="padding-top:0;"><div class="banner-inner">
+    <div class="banner-text">
+      <h3>出笼 · 色香味</h3>
+      <p>刚出笼的根面角晶莹剔透，薄皮透光，</p>
+      <p>馅料饱满，热气腾腾。</p>
+    <div class="banner-img">
+      <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/07_出笼根面角.jpg" alt="出笼根面角" loading="lazy">
+  </div>
+</section>
+
+<!-- ===== 蘸料 BANNER ===== -->
+<section class="banner">
+  <div class="banner-inner">
+    <div class="banner-img">
+      <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/08_根面角蘸料.jpg" alt="根面角蘸料" loading="lazy">
+    <div class="banner-text">
+      <h3>蘸料 · 灵魂之笔</h3>
+      <p>秘制红油辣椒，花椒、芝麻、香料精心配比。</p>
+      <p>一口入魂，香辣鲜爽。</p>
+  </div>
+</section>
+
+<!-- ===== DISHES ===== -->
+<section class="dishes section">
+  <div class="section-inner">
+    <div class="dishes-header">
+      <div class="dishes-en">SIGNATURE DISHES</div>
+      <h2 class="dishes-title">招牌菜系 · 味蕾盛宴</h2>
+      <div class="dishes-sub">每日新鲜现做，道道都是经典</div>
+    </div>
+    <div class="dishes-grid">      <div class="dish-item" style="--i:13">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/13_浆水蝌蚂子.jpg" alt="宁强麻辣鸡" loading="lazy">
+        <div class="dish-name">宁强麻辣鸡</div>
+      </div>      <div class="dish-item" style="--i:12">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/09_宁强麻辣鸡.jpg" alt="辣子鸡干拌面" loading="lazy">
+        <div class="dish-name dish-name small">辣子鸡干拌面</div>
+      </div>      <div class="dish-item" style="--i:11">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/18_三鲜抄手.jpg" alt="炝锅面" loading="lazy">
+        <div class="dish-name">炝锅面</div>
+      </div>      <div class="dish-item" style="--i:10">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/14_鸡蛋醪糟.jpg" alt="浆水面" loading="lazy">
+        <div class="dish-name">浆水面</div>
+      </div>      <div class="dish-item" style="--i:9">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/16_炸酱面.jpg" alt="浆水蝌蚂子" loading="lazy">
+        <div class="dish-name">浆水蝌蚂子</div>
+      </div>      <div class="dish-item" style="--i:8">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/15_老坛酸菜面.jpg" alt="鸡蛋醪糟" loading="lazy">
+        <div class="dish-name">鸡蛋醪糟</div>
+      </div>      <div class="dish-item" style="--i:7">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/17_鸡丝米线.jpg" alt="老坛酸菜面" loading="lazy">
+        <div class="dish-name">老坛酸菜面</div>
+      </div>      <div class="dish-item" style="--i:6">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/12_浆水面.jpg" alt="炸酱面" loading="lazy">
+        <div class="dish-name">炸酱面</div>
+      </div>      <div class="dish-item" style="--i:5">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/10_辣子鸡干拌面.jpg" alt="鸡丝米线" loading="lazy">
+        <div class="dish-name">鸡丝米线</div>
+      </div>      <div class="dish-item" style="--i:4">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/11_炝锅面.jpg" alt="三鲜抄手" loading="lazy">
+        <div class="dish-name">三鲜抄手</div>
+      </div>      <div class="dish-item" style="--i:3">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/20_蹄花面.jpg" alt="老麻抄手" loading="lazy">
+        <div class="dish-name">老麻抄手</div>
+      </div>      <div class="dish-item" style="--i:2">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/21_银耳汤.jpg" alt="蹄花面" loading="lazy">
+        <div class="dish-name">蹄花面</div>
+      </div>      <div class="dish-item" style="--i:1">
+        <img src="https://cdn.jsdelivr.net/gh/danagenmianjiao/dagenmianjiao@main/19_老麻抄手.jpg" alt="银耳汤" loading="lazy">
+        <div class="dish-name">银耳汤</div>
+      </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="team section">
+  <div class="team-inner">
+    <div class="section-label">OUR TEAM</div>
+    <h2 class="section-title">匠心团队</h2>
+    <div class="team-text">
+      <p>大安根面角传承百年手艺，由经验丰富的老师傅严格把关每一道工序。</p>
+      <p>擀面、分剂、填馅、包制、摆放……每一个动作都是对传统工艺的尊重。</p>
+      <p>「源于自然 · 传递新鲜」，我们用心做好每一份根面角。</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-brand">大安根面角</div>
+  <div class="footer-info">
+    <p><a href="https://uri.amap.com/search?keyword=大安根面角(太白路店)&city=汉中">📍 汉中市汉台区太白路138号</a></p>
+    <p><a href="tel:13891609262">📞 13891609262</a></p>
+    <p style="color:rgba(255,255,255,0.3);font-size:12px;">Copyright © 大安根面角 · 非遗传承技艺</p>
+  </div>
+</footer>
+
+</body>
+</html>
